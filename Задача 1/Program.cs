@@ -18,6 +18,4 @@ int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ввведите N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("\n");
-
 PrintLength(M, N);

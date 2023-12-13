@@ -22,11 +22,13 @@ static void PrintArray(int[] arrayForPrint)
 {
     int afpLength = arrayForPrint.Length;
 
+    Console.Write("==> ");
+
     for (int i = 0; i < afpLength; i++)
     {
         
         Console.Write(arrayForPrint[i]);
-        if ( i < afpLength - 1 ) { Console.Write(" "); } else { Console.WriteLine("."); }
+        if ( i < afpLength - 1 ) { Console.Write(" "); }
 
     }
 
@@ -36,7 +38,7 @@ static void PrintArrayRevers(int[] arrayForPrint, int cnt = 0)
 {
     int afpLength = arrayForPrint.Length - 1;
 
-    if ( cnt == 0 ) { Console.Write("==> "); }
+    if ( cnt == 0 ) { Console.Write("\n==> "); }
 
     if ( cnt < afpLength )
     {   
@@ -45,7 +47,7 @@ static void PrintArrayRevers(int[] arrayForPrint, int cnt = 0)
     }
     else
     {
-        Console.Write(arrayForPrint[afpLength - cnt] + ".");
+        Console.Write(arrayForPrint[afpLength - cnt]);
     }
 
 }

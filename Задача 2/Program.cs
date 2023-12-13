@@ -27,11 +27,11 @@ static int Akkerman(int M, int N)
     
 }
 
-Console.WriteLine("Введите M: ");
+Console.Write("Введите M: ");
 int M = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Ввведите N: ");
+Console.Write("Ввведите N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
 int A = Akkerman(M, N);
 
-Console.WriteLine("\n> A({0}, {1}) = {2}", M, N, A);
+Console.WriteLine("A({0}, {1}) = {2}", M, N, A);
